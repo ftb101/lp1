@@ -49,10 +49,13 @@ header .container h1 {
   width: 166px;
   height: 34px;
 }
+header .container h1 a img {
+  width: 100%;
+}
 header .container .hamberg {
   width: 70px;
   height: 70px;
-  background-image: url(/assets/image/hamburger-menu.png);
+  background-image: url(../image/hamburger-menu.png);
   position: relative;
 }
 header .container .hamberg span {
@@ -93,7 +96,7 @@ header .container .hamberg.active span:nth-child(3) {
   position: relative;
   width: 100vw;
   min-height: 260px;
-  background: url(/assets/image/mainVIsual_sp.jpg.png) no-repeat right center;
+  background: url(../image/mainVIsual_sp.jpg.png) no-repeat right center;
   background-size: contain;
   margin-bottom: 20px;
 }
@@ -361,7 +364,7 @@ header .container .hamberg.active span:nth-child(3) {
   padding: 12px 15px 28px;
 }
 #course ul li p::before {
-  content: url(/assets/image/arrow-right.png);
+  content: url(../image/arrow-right.png);
 }
 #course ul li p span {
   color: #005bac;
@@ -491,7 +494,7 @@ footer {
     position: relative;
     width: 100vw;
     min-height: 651px;
-    background: url(/assets/image/mainVIsual_pc.jpg.png) center;
+    background: url(../image/mainVIsual_pc.jpg.png) center;
     background-size: cover;
     margin-bottom: 0;
   }
