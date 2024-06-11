@@ -57,20 +57,20 @@ header{
         display: block;
         width: 30px;
         height: 5px;
-        border-radius: 2px;
+        // border-radius: 2px;
         background-color: #fff;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         transition: all 0.3s;
         &:nth-child(1){
-          top: 26%;
+          top: 30%;
         }
         &:nth-child(2) {
           top: 46%;
         }
         &:nth-child(3) {
-          top: 66%;
+          top: 61%;
         }
       }
       &.active span{
@@ -96,13 +96,13 @@ header{
   position: relative;
   width: 100vw;
   min-height: 260px;
-  background: url(../image/mainVIsual_sp.jpg.png)no-repeat right center;
+  background: url(../image/mainVIsual_sp.jpg.png)no-repeat right top;
   background-size: contain;
   margin-bottom: 20px;
   & .catch{
     width:175px;
     height: 181px;
-    padding: 7% 0 0 7%;
+    padding: 7.5% 0 0 7%;
     & .upper{
       width: 147px;
       height: 69px;
@@ -150,7 +150,7 @@ header{
   & #slide{
     width: 100vw;
     height: 280px;
-    padding: 10px 0;
+    padding: 10px 0 42px;
     background-color: #005bac;
     position: absolute;
     top: 0;
@@ -163,10 +163,10 @@ header{
         width: 90%;
         margin: 0 auto;
         font-size: 18px;
-        font-weight: bold;
+        font-weight: normal;
         line-height: 1.4;
-        height: 50px;
-        line-height: 47px;
+        height: 62px;
+        line-height: 62px;
         border-bottom:#fff 1px solid;
         &:last-child{
           border-bottom:none;
@@ -243,16 +243,17 @@ header{
     margin: 0 auto;
     & li{
       width: 100%;
+      margin-bottom: 35px;
       & figure img{
         margin: 0 auto;
         display: block;
         min-width: 343px;
         height: auto;
-        margin-bottom: 40px;
+        margin-bottom: 8px;
       }
       & .coments{
         margin: 0 auto 15px;
-        padding-left: 5%;
+        // padding-left: 5%;
         & h3{
           color: #f11f8d;
           font-size: 24px;
@@ -267,14 +268,16 @@ header{
         & h4{
           font-size: 20px;
           font-weight: bold;
-          line-height: 1.8;
-          margin-bottom: 12px;
+          line-height: 1.6;
+          letter-spacing: -0.2px;
+          // margin-bottom: 12px;
         }
         & p{
+          padding-top: 8px;
           font-size: 16px;
           font-weight: normal;
           line-height: 1.7;
-          letter-spacing: 0.2px;
+          letter-spacing: -0.2px;
         }
       }
     }
@@ -318,7 +321,7 @@ header{
 //コース・目的
 #course{
   width: 375px;
-  margin: 80px auto 73px;
+  margin: 68px auto 73px;
   h2{
     text-align: center;
     font-size: 28px;
@@ -353,6 +356,7 @@ header{
       }
       & figure{
         width: 343px;
+        height: 220px;
         text-align: center;
         margin: 0 auto;
         overflow: hidden;
@@ -368,7 +372,7 @@ header{
       & p{
         font-size: 20px;
         font-weight: bold;
-        padding: 12px 15px 28px;
+        padding: 12px 12px 28px;
         &::before{
           content: url(../image/arrow-right.png);
         }
@@ -402,8 +406,8 @@ header{
   & th {
     font-size: 16px;
     font-weight: normal;
-    width: 114px;
-    height: 63px;
+    width: 125px;
+    height: 62px;
   }
   & td {
     width: 237px;
@@ -466,25 +470,30 @@ footer {
 
   header{
     height: 101px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    height: 101px;
     box-shadow: 0px 2px 8px 0px #9f9f9f ;
     align-items: center;
       & .container{
         padding-top: 15px;
       & h1{
-        margin-left: 0;
+        margin-left: 1.5%;
+        margin-top: 1%;
         width: 241px;
       }
       & .pc{
-        width: 57%;
+        width: 64.4%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         & li{
-          // background-color: #2f8c4f;
+          background-color: #2f8c4f;
           & a{
             color: #333;
-            letter-spacing: -1.1px;
-            font-size: 20px;
+            letter-spacing: -1px;
+            font-size: calc(.9vw + 0.4rem);
             font-family: "Noto Sans JP", sans-serif;
             font-weight: normal;
             &:hover{
@@ -512,6 +521,7 @@ footer {
 
 //メインビジュアル
 .main_visual{
+  margin-top: 101px;
   position: relative;
   width: 100vw;
   min-height: 651px;
@@ -524,7 +534,7 @@ footer {
   & .catch{
     width:420px;
     height: 406px;
-    padding: 7% 0 0 7%;
+    padding: 7% 0 0 15%;
     & .upper{
       width: 325px;
       height: 150px;
@@ -612,21 +622,20 @@ footer {
   position: relative;
   & ul{
     position: absolute;
-    top: -87px;
+    top: -50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     & li{
-      margin-top: 36px;
-      margin-bottom: -37px;
-      padding-right: 40px;
+      margin: 1% 0 ;
+      padding-right: 38px;
       &:last-child{
         padding-right: 0;
       }
       & .btn{
         margin: 0 auto;
         display: block;
-        width: 345px;
+        width: 340px;
         height: 75px;
         line-height: 75px;
         border-radius: 36px;
@@ -652,7 +661,7 @@ footer {
 }
 //理由
 #reason{
-  margin: 72px 0;
+  margin: 107px 0 55px;
   & h2{
     font-size: 36px;
     margin-bottom: 32px;
@@ -662,7 +671,7 @@ footer {
   }
 
   & ul.container{
-    max-width: 1040px;
+    max-width: 1160px;
     & li{
       display: flex;
       justify-content: space-between;
@@ -674,7 +683,7 @@ footer {
         margin: 0 auto;
 
         & img{
-          width: 85%;
+          // width: 85%;
           display: block;
           max-width: 560px;
           height: auto;
@@ -684,27 +693,28 @@ footer {
       }
 
       & .coments{
-        width: 45%;
+        width: 47.5%;
         margin: 0 auto;
         padding-left: 0%;
-        max-width: 580px;
+        max-width: 550px;
         & h3{
           font-size: 28px;
-          line-height: 1.3;
+          line-height: 1.4;
           & span{
+            padding-left: 8px;
             font-size: 42px;
           }
         }
         & h4{
           font-size: 24px;
           line-height: 1.5;
-          margin-bottom: 12px;
+          margin-bottom: 14px;
         }
         & p{
           font-size: 16px;
           font-weight: normal;
-          line-height: 1.7;
-          letter-spacing: 0.2px;
+          line-height: 1.8;
+          letter-spacing: 0.1px;
         }
       }
     }
@@ -721,12 +731,13 @@ footer {
     padding: 40px 0;
     width: 400px;
     height: 133px;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     & p{
       // box-sizing: none;
       padding:20px 0 0 ;
+      letter-spacing: -.1px;
       line-height: 2.63;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
     }
     & .aplly a {
       margin: 0 auto 60px;
@@ -742,10 +753,10 @@ footer {
 //コース・目的
 #course{
   width:80%;
-  margin: 72px auto 73px;
+  margin: 72px auto 42px;
   h2{
     font-size: 36px;
-    margin: 64px 0 24px;
+    margin: 64px 0 30px;
   }
   .tab{
     justify-content: space-between;
@@ -761,7 +772,7 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;//1160px;
-    padding-top: 32px;
+    padding-top: 25px;
     background-color: #f2f9ff;
     // &.hidden{
     //   display: none;
@@ -783,7 +794,7 @@ footer {
         // }
       }
       & p{
-        padding: 0 15px 40px;
+        padding: 0 0 39px;
       }
     }
   }
@@ -794,15 +805,15 @@ footer {
   text-align: center;
   & h2{
     font-size: 36px;
-    margin: 72px 0 32px;
+    margin: 72px 0 26px;
   }
   & table {
     width: 600px;
   }
   & th {
     font-size: 18px;
-    width: 141px;
-    height: 71px;
+    width: 142px;
+    height: 75px;
   }
   & td {
     width: 452px;
@@ -854,10 +865,11 @@ footer {
 }
 //フッター
 footer {
-  height: 83px;
-  line-height: 83px;
+  height: 120px;
+  line-height: 120px;
   text-align: center;
   background-color: #dddddd;
+  color: #333;
   font-size: 13px;
 }
 
