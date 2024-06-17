@@ -112,7 +112,7 @@ header .container #slide li {
   width: 90%;
   margin: 0 auto;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.4;
   height: 63px;
   line-height: 63px;
@@ -123,25 +123,26 @@ header .container #slide li:last-child {
 }
 header .container #slide li a {
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
   color: #fff;
 }
-header .container #slide li a::before {
+header .container #slide li::before {
   content: "";
-  width:30px;
+  width:28px;
   height: 15px;
   display:inline-block;
   background: url(../image/arrow-right-sp.png)no-repeat;
   background-size: contain;
   vertical-align: middle;
 }
-header .container #slide li a:last-child:before {
+header .container #slide li:last-child:before {
   content: none;
 }
 header .container #slide li a.btn {
   margin-top: 32px;
   width: 350px;
   height: 66px;
+  font-weight: bold;
   text-align: center;
   line-height: 66px;
   border-radius: 33px;
@@ -162,7 +163,7 @@ header .container #slide li a.btn {
 .main_visual .catch {
   width: 175px;
   height: 181px;
-  padding: 8% 0 0 7%;
+  padding: 8% 0 0 5%;
 }
 .main_visual .catch .upper {
   width: 147px;
@@ -187,6 +188,7 @@ header .container #slide li a.btn {
 .main_visual .catch .upper .words h2 {
   color: #f11f8d;
   font-size: 25px;
+  font-style: italic;
 }
 .main_visual .catch .upper .words h2 span {
   font-size: 36px;
@@ -203,7 +205,7 @@ header .container #slide li a.btn {
 }
 .main_visual .catch .lower h3 {
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 900;
   color: #005bac;
 }
 
@@ -523,7 +525,8 @@ footer {
   header .container .pc li a {
     color: #333;
     letter-spacing: -1px;
-    font-size: calc(0.9vw + 0.4rem);
+    /* font-size: calc(0.9vw + 0.4rem); */
+    font-size: clamp(16px,calc(0.9vw + 0.4rem),20px);
     font-family: "Noto Sans JP", sans-serif;
     font-weight: normal;
   }
@@ -559,7 +562,7 @@ footer {
   .main_visual .catch {
     width: 420px;
     height: 406px;
-    padding: 7% 0 0 15%;
+    padding: 7% 0 0 0;
   }
   .main_visual .catch .upper {
     width: 325px;
