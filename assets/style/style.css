@@ -204,6 +204,7 @@ header .container #slide li a.btn {
   font-weight: normal;
 }
 .main_visual .catch .lower h3 {
+  font-family:"NotoSansJP" ;
   font-size: 25px;
   font-weight: 900;
   color: #005bac;
@@ -511,10 +512,10 @@ footer {
   header .container h1 {
     margin-left: 1.5%;
     margin-top: 1%;
-    width: 241px;
+    width:241px;
   }
   header .container h1 a img {
-    width: 100%;
+    width:100%;
   }
   header .container .pc {
     width: 64.4%;
